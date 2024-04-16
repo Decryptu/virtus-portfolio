@@ -30,9 +30,25 @@ function getMDXFiles(dir) {
   return fs.readdirSync(dir).filter((file) => path.extname(file) === '.mdx');
 }
 
-function readMDXFile(filePath) {
-  let rawContent = fs.readFileSync(filePath, 'utf-8');
-  return parseFrontmatter(rawContent);
+function readMDXFile(filePath: string) {
+  // Ensure the filePath is within the allowed directory
+  const allowedBasePath = path.join(process.cwd(), 'content');
+  const resolvedPath = path.resolve(allowedBasePath, filePath);
+
+  // Check if resolvedPath still falls under the allowedBasePath
+  if (!resolvedPath.startsWith(allowedBasePath)) {
+    throw new Error(
+      'Accessing files outside of the content directory is not allowed'
+    );
+  }
+
+  try {
+    let rawContent = fs.readFileSync(resolvedPath, 'utf-8');
+    return parseFrontmatter(rawContent);
+  } catch (error) {
+    console.error(`Failed to read file at ${resolvedPath}: ${error}`);
+    throw error; // Rethrow or handle as needed
+  }
 }
 
 function extractTweetIds(content) {
