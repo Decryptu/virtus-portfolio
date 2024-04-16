@@ -11,10 +11,6 @@ import meetups from 'public/images/home/meetups.jpg';
 import vercel from 'public/images/home/vercel.jpg';
 import avatar from 'app/avatar.jpg';
 import { PreloadResources } from 'app/preload';
-import {
-  getLeeYouTubeSubs,
-  getVercelYouTubeSubs,
-} from 'app/db/queries';
 
 function Badge(props) {
   return (
@@ -89,9 +85,9 @@ async function Subs({ name }: { name: string }) {
   noStore();
   let subscribers;
   if (name === '@leerob') {
-    subscribers = await getLeeYouTubeSubs();
+    subscribers = "123";
   } else {
-    subscribers = await getVercelYouTubeSubs();
+    subscribers = "321";
   }
 
   return (
