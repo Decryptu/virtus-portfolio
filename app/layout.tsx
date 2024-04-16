@@ -10,15 +10,15 @@ import { SandpackCSS } from './blog/[slug]/sandpack';
 export const metadata: Metadata = {
   metadataBase: new URL('https://leerob.io'),
   title: {
-    default: 'Lee Robinson',
-    template: '%s | Lee Robinson',
+    default: 'Maximilien Prué',
+    template: '%s | Maximilien Prué',
   },
-  description: 'Developer, writer, and creator.',
+  description: 'Editor in chief, writer, and community manager.',
   openGraph: {
-    title: 'Lee Robinson',
-    description: 'Developer, writer, and creator.',
-    url: 'https://leerob.io',
-    siteName: 'Lee Robinson',
+    title: 'Maximilien Prué',
+    description: 'Editor in chief, writer, and community manager.',
+    url: 'https://virtus-portfolio.vercel.app.io',
+    siteName: 'Maximilien Prué',
     locale: 'en_US',
     type: 'website',
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: 'Lee Robinson',
+    title: 'Maximilien Prué',
     card: 'summary_large_image',
   },
   verification: {

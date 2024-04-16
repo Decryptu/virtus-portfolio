@@ -84,15 +84,15 @@ function ChannelLink({ img, link, name }) {
 async function Subs({ name }: { name: string }) {
   noStore();
   let subscribers;
-  if (name === '@leerob') {
-    subscribers = '123';
+  if (name === '@MaximilienP51') {
+    subscribers = '250';
   } else {
-    subscribers = '321';
+    subscribers = '250 000';
   }
 
   return (
     <p className="text-neutral-600 dark:text-neutral-400">
-      {subscribers} subscribers
+      {subscribers} followers
     </p>
   );
 }
@@ -240,13 +240,13 @@ export default function Page() {
       <div className="my-8 flex w-full flex-col space-x-0 space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
         <ChannelLink
           img={avatar}
-          name="@leerob"
-          link="https://www.youtube.com/@leerob"
+          name="@MaximilienP51"
+          link="https://x.com/MaximilienP51"
         />
         <ChannelLink
           img={vercel}
-          name="@vercel"
-          link="https://www.youtube.com/@vercelhq"
+          name="@CryptoastMedia"
+          link="https://x.com/CryptoastMedia"
         />
       </div>
       <div className="prose prose-neutral dark:prose-invert">
