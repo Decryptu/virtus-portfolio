@@ -10,12 +10,10 @@ import filming from 'public/images/home/filming.jpg';
 import meetups from 'public/images/home/meetups.jpg';
 import vercel from 'public/images/home/vercel.jpg';
 import avatar from 'app/avatar.jpg';
-import ViewCounter from 'app/blog/view-counter';
 import { PreloadResources } from 'app/preload';
 import {
   getLeeYouTubeSubs,
   getVercelYouTubeSubs,
-  getViewsCount,
 } from 'app/db/queries';
 
 function Badge(props) {
@@ -115,7 +113,6 @@ function BlogLink({ slug, name }) {
             {name}
           </p>
           <Suspense fallback={<p className="h-6" />}>
-            <Views slug={slug} />
           </Suspense>
         </div>
         <div className="transform text-neutral-700 transition-transform duration-300 group-hover:-rotate-12 dark:text-neutral-300">
@@ -124,11 +121,6 @@ function BlogLink({ slug, name }) {
       </a>
     </div>
   );
-}
-
-async function Views({ slug }: { slug: string }) {
-  let views = await getViewsCount();
-  return <ViewCounter allViews={views} slug={slug} />;
 }
 
 export default function Page() {
