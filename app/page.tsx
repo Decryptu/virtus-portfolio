@@ -85,9 +85,9 @@ async function Subs({ name }: { name: string }) {
   noStore();
   let subscribers;
   if (name === '@leerob') {
-    subscribers = "123";
+    subscribers = '123';
   } else {
-    subscribers = "321";
+    subscribers = '321';
   }
 
   return (
@@ -108,8 +108,7 @@ function BlogLink({ slug, name }) {
           <p className="font-medium text-neutral-900 dark:text-neutral-100">
             {name}
           </p>
-          <Suspense fallback={<p className="h-6" />}>
-          </Suspense>
+          <Suspense fallback={<p className="h-6" />}></Suspense>
         </div>
         <div className="transform text-neutral-700 transition-transform duration-300 group-hover:-rotate-12 dark:text-neutral-300">
           <ArrowIcon />
@@ -124,24 +123,22 @@ export default function Page() {
     <section>
       <PreloadResources />
       <h1 className="mb-8 text-2xl font-medium tracking-tighter">
-        hey, I'm leerob 👋
+        hey, I'm Maximilien 👋
       </h1>
       <p className="prose prose-neutral dark:prose-invert">
         {`I'm a frontend developer, optimist, and community builder. I currently `}
         <Link href="/work">work</Link>
-        {` as the VP of Product at `}
+        {` as the Editor in chief at `}
         <span className="not-prose">
-          <Badge href="https://vercel.com/home">
-            <svg
-              width="13"
-              height="11"
-              role="img"
-              aria-label="Vercel logo"
-              className="mr-1 inline-flex"
-            >
-              <use href="/sprite.svg#vercel" />
-            </svg>
-            Vercel
+          <Badge href="https://cryptoast.fr/">
+            <img
+              src="/cryptoast.svg"
+              alt="Cryptoast logo"
+              width="16"
+              height="16"
+              className="inline-flex"
+            />
+            <span className='ml-1'>Cryptoast</span>
           </Badge>
         </span>
         {`, where I help teach the `}
