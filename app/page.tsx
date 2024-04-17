@@ -371,7 +371,7 @@ export default function Page() {
             href="mailto:mprue@gmail.com"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">Me contacter</p>
+            <p className="ml-2 h-7">Mail</p>
           </a>
         </li>
       </ul>
