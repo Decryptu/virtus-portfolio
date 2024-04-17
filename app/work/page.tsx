@@ -51,7 +51,7 @@ export default function WorkPage() {
         <p>
           Ces initiatives ont non seulement augmenté le trafic et l'engagement
           sur notre plateforme mais ont également établi Cryptoast comme une
-          référence dans le suivi de l'actualité cryptographique.
+          référence dans le suivi de l'actualité des cryptomonnaies.
         </p>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
       </div>
