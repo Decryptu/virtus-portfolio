@@ -8,18 +8,18 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { SandpackCSS } from './blog/[slug]/sandpack';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://leerob.io'),
+  metadataBase: new URL('https://virtus-portfolio.vercel.app'),
   title: {
     default: 'Maximilien Prué',
     template: '%s | Maximilien Prué',
   },
-  description: 'Editor in chief, writer, and community manager.',
+  description: 'Rédacteur en chef, écrivain, et community manager.',
   openGraph: {
     title: 'Maximilien Prué',
-    description: 'Editor in chief, writer, and community manager.',
-    url: 'https://virtus-portfolio.vercel.app.io',
+    description: 'Rédacteur en chef, écrivain, et community manager.',
+    url: 'https://virtus-portfolio.vercel.app',
     siteName: 'Maximilien Prué',
-    locale: 'en_US',
+    locale: 'fr_FR',
     type: 'website',
   },
   robots: {
