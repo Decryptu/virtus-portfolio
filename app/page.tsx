@@ -241,12 +241,12 @@ export default function Page() {
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-        J'ai pris l'initiative de plusieurs améliorations au sein de 
-        la rédaction de Cryptoast, notamment la mise en place d'un 
-        format d'article spécifique pour couvrir l'actualité en direct. 
-        Ce format permet de suivre un événement sur plusieurs jours au 
-        sein d'un même article, offrant ainsi à nos lecteurs une expérience 
-        immersive et continue.
+          J'ai pris l'initiative de plusieurs améliorations au sein de la
+          rédaction de Cryptoast, de l'optimisation du SEO, à la mise en place
+          d'un format d'article spécifique pour couvrir l'actualité en direct.
+          Ce format permet de suivre un événement sur plusieurs jours au sein
+          d'un même article, offrant ainsi à nos lecteurs une expérience
+          immersive et continue.
         </p>
       </div>
       <div className="my-8 flex w-full flex-col space-x-0 space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
@@ -263,21 +263,26 @@ export default function Page() {
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-        En parallèle, j'ai contribué à dynamiser les réseaux sociaux 
-        de Cryptoast, rendant l'interaction avec notre communauté plus 
-        vivante et engageante. Grâce à l'introduction d'infographies 
-        attractives, nous avons significativement augmenté l'engagement 
-        de nos abonnés, avec une moyenne de plus de 150 likes et retweets 
-        par post de ce type.
+          En parallèle, j'ai contribué à dynamiser les réseaux sociaux de
+          Cryptoast, rendant l'interaction avec notre communauté plus vivante et
+          engageante. Grâce à l'introduction d'infographies attractives, nous
+          avons significativement augmenté l'engagement de nos abonnés, avec une
+          moyenne de plus de 150 likes et retweets par post de ce type.
         </p>
       </div>
       <div className="my-8 flex w-full flex-col space-y-4">
         <BlogLink
-          name="What Makes A Great Developer Experience?"
-          slug="developer-experience"
+          name="Les Argentins se tournent vers le Bitcoin pour contrer l'inflation"
+          slug="argentins-bitcoin"
         />
-        <BlogLink name="What is Developer Relations?" slug="devrel" />
-        <BlogLink name="The Story of Heroku" slug="heroku" />
+        <BlogLink
+          name="Bitcoin de retour au-dessus des 47 000 dollars : bientot le trillion de capitalisation boursière ?"
+          slug="bitcoin-47000"
+        />
+        <BlogLink
+          name="MicroStrategy acquiert 3 000 Bitcoins : l'entreprise détient désormais plus de 10 milliards de dollars de BTC"
+          slug="microstrategy-3000"
+        />
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
