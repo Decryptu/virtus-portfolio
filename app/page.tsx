@@ -349,7 +349,7 @@ export default function Page() {
             href="https://x.com/MaximilienP51"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">Me suivre</p>
+            <p className="ml-2 h-7">𝕏</p>
           </a>
         </li>
         <li>
@@ -360,7 +360,7 @@ export default function Page() {
             href="https://www.linkedin.com/in/maximilien-prue/"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">Mon LinkedIn</p>
+            <p className="ml-2 h-7">LinkedIn</p>
           </a>
         </li>
         <li>
