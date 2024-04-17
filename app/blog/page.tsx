@@ -3,7 +3,7 @@ import { Suspense } from 'react';
 import { getBlogPosts } from 'app/db/blog';
 
 export const metadata = {
-  title: 'Blog',
+  title: 'Articles',
   description: 'Lisez mes réflexions sur les cryptomonnaies, la finance, etc.',
 };
 
