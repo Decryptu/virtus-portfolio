@@ -286,53 +286,60 @@ export default function Page() {
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          I invest small angel checks into early stage startups building tools
-          for developers.
+          J'ai traité une vaste gamme de sujets et d'événements liés aux
+          cryptomonnaies. J'ai également établi et entretenu des relations avec
+          des acteurs majeurs du secteur, renforçant ainsi notre réseau et notre
+          influence dans l'industrie.
         </p>
       </div>
       <div className="my-8 flex h-14 w-full flex-row space-x-2 overflow-x-auto">
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-          <a href="https://linear.app">
-            <svg width="78" height="20" role="img" aria-label="Linear logo">
-              <use href="/sprite.svg#linear" />
-            </svg>
+          <a href="https://alyra.fr">
+            <img src="/alyra.svg" width="78" height="20" alt="Alyra logo" />
           </a>
         </div>
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-          <a href="https://supabase.com">
-            <svg width="100" height="19" role="img" aria-label="Supabase logo">
-              <use href="/sprite.svg#supabase" />
-            </svg>
+          <a href="https://ledger.com">
+            <img
+              src="/ledger.svg"
+              width="70"
+              height="19"
+              alt="Ledger logo"
+            />
           </a>
         </div>
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-          <a href="https://www.makeswift.com/blog/makeswift-is-joining-bigcommerce">
-            <svg width="96" height="19" role="img" aria-label="Makeswift logo">
-              <use href="/sprite.svg#makeswift" />
-            </svg>
+          <a href="https://www.adan.eu/">
+            <img src="/adan.svg" width="74" height="19" alt="Adan logo" />
           </a>
         </div>
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-          <a href="https://resend.com">
-            <svg width="70" height="17" role="img" aria-label="Resend logo">
-              <use href="/sprite.svg#resend" />
-            </svg>
+          <a href="https://binance.com">
+            <img
+              src="/binance.svg"
+              width="110"
+              height="17"
+              alt="Binance logo"
+            />
           </a>
         </div>
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-          <a href="https://bun.sh">
-            <svg width="35" height="27" role="img" aria-label="Bun logo">
-              <use href="/sprite.svg#bun" />
-            </svg>
+          <a href="https://aave.com/">
+            <img src="/aave.svg" width="27" height="27" alt="Aave logo" />
           </a>
         </div>
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          I've worked with and advised companies on{' '}
-          <Link href="/blog/developer-marketing">developer marketing</Link>,{' '}
-          <Link href="/blog/devrel">developer relations</Link>, building
-          open-source communities, product-led growth, and more.
+          J'ai couvert{' '}
+          <Link href="https://cryptoast.fr/direct-suivre-proces-sam-bankman-fried-ftx-temps-reel/">
+            le procès de Sam Bankman-Fried
+          </Link>
+          ,{' ainsi que '}
+          <Link href="https://cryptoast.fr/direct-suivre-affaire-ftx-temps-reel/">
+            la chute de FTX
+          </Link>
+          , en temps réel sur plusieurs jours.
         </p>
       </div>
       <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
