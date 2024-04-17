@@ -143,7 +143,12 @@ export default function Page() {
             <span className="ml-1">Cryptoast</span>
           </Badge>
         </span>
-        {`, où j'ai écrit plus de 1200 articles.`}
+        {`, où j'ai écrit plus de `}
+        <Link href="https://cryptoast.fr/author/maximilien/" legacyBehavior>
+          <a target="_blank" rel="noopener noreferrer">
+            1200 articles
+          </a>
+        </Link>
         <br></br>
         <br></br>
         {`Passionné par `}
@@ -298,12 +303,7 @@ export default function Page() {
         </div>
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
           <a href="https://ledger.com">
-            <img
-              src="/ledger.svg"
-              width="70"
-              height="19"
-              alt="Ledger logo"
-            />
+            <img src="/ledger.svg" width="70" height="19" alt="Ledger logo" />
           </a>
         </div>
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
