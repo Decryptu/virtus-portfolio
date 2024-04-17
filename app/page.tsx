@@ -146,7 +146,7 @@ export default function Page() {
         {`, où j'ai écrit plus de `}
         <Link href="https://cryptoast.fr/author/maximilien/" legacyBehavior>
           <a target="_blank" rel="noopener noreferrer">
-            1200 articles
+            1200 articles.
           </a>
         </Link>
         <br></br>
