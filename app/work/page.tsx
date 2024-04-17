@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'À Propos de Moi',
+  title: 'À propos de moi',
   description:
     'Découvrez mon parcours professionnel et mes contributions significatives dans le domaine de la cryptomonnaie.',
 };
@@ -11,7 +11,7 @@ export default function WorkPage() {
   return (
     <section>
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">
-        Mon Parcours Professionnel
+        Mon parcours professionnel
       </h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
