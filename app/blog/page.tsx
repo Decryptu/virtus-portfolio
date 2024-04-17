@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { Suspense } from 'react';
-import ViewCounter from './view-counter';
 import { getBlogPosts } from 'app/db/blog';
 
 export const metadata = {
@@ -14,7 +13,7 @@ export default function BlogPage() {
   return (
     <section>
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">
-        read my blog
+        Lire mes articles
       </h1>
       {allBlogs
         .sort((a, b) => {

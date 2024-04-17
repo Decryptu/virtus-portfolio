@@ -174,7 +174,7 @@ export default function Page() {
             <span className="ml-1">Ethereum</span>
           </Badge>
         </span>
-        {`, je suis également écrivain et gestionnaire de communauté. Chez Cryptoast
+        {`, je suis également écrivain et community manager. Chez Cryptoast
         , je contribue à sensibiliser et à développer notre communauté de lecteurs engagés.`}
       </p>
       <div className="my-8 columns-2 gap-4 sm:columns-3">
@@ -241,10 +241,12 @@ export default function Page() {
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          I create educational content for developers, teaching them about web
-          development, JavaScript and TypeScript, React and Next.js, and more.
-          This comes in all forms: blog posts, videos, tweets, conference talks,
-          and workshops. You can watch some of my favorites below.
+        J'ai pris l'initiative de plusieurs améliorations au sein de 
+        la rédaction de Cryptoast, notamment la mise en place d'un 
+        format d'article spécifique pour couvrir l'actualité en direct. 
+        Ce format permet de suivre un événement sur plusieurs jours au 
+        sein d'un même article, offrant ainsi à nos lecteurs une expérience 
+        immersive et continue.
         </p>
       </div>
       <div className="my-8 flex w-full flex-col space-x-0 space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
@@ -261,10 +263,12 @@ export default function Page() {
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          Over the past decade, I've written content on my blog and newsletter.
-          I try to keep things simple. You'll find writing about technologies
-          I'm interested in at the time, or how I'm learning and growing in my
-          career, sharing knowledge along the way.
+        En parallèle, j'ai contribué à dynamiser les réseaux sociaux 
+        de Cryptoast, rendant l'interaction avec notre communauté plus 
+        vivante et engageante. Grâce à l'introduction d'infographies 
+        attractives, nous avons significativement augmenté l'engagement 
+        de nos abonnés, avec une moyenne de plus de 150 likes et retweets 
+        par post de ce type.
         </p>
       </div>
       <div className="my-8 flex w-full flex-col space-y-4">
@@ -335,7 +339,7 @@ export default function Page() {
             href="https://x.com/MaximilienP51"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">follow me</p>
+            <p className="ml-2 h-7">Me suivre</p>
           </a>
         </li>
         <li>
@@ -343,10 +347,10 @@ export default function Page() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://leerob.substack.com"
+            href="mailto:mprue@gmail.com"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">get email updates</p>
+            <p className="ml-2 h-7">Me contacter</p>
           </a>
         </li>
       </ul>

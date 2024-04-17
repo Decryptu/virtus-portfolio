@@ -2,21 +2,14 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Work',
-  description: 'A summary of my work and contributions.',
+  title: 'Travail',
+  description: 'Un résumé de mon travail et de mes contributions.',
 };
-
-async function Stars() {
-  let res = await fetch('https://api.github.com/repos/vercel/next.js');
-  let json = await res.json();
-  let count = Math.round(json.stargazers_count / 1000);
-  return `${count}k stars`;
-}
 
 export default function WorkPage() {
   return (
     <section>
-      <h1 className="font-medium text-2xl mb-8 tracking-tighter">my work</h1>
+      <h1 className="font-medium text-2xl mb-8 tracking-tighter">Mon travail</h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
           On a mission to build products developers{' '}
@@ -70,7 +63,7 @@ export default function WorkPage() {
         <p>
           Since I joined Vercel in 2020, Next.js active developers have grown
           1000%, now at ~900k. Next.js is now a top 10 software project on
-          GitHub with <Stars />. It's used by Walmart, ChatGPT, Starbucks, Okta,
+          GitHub with 120k. It's used by Walmart, ChatGPT, Starbucks, Okta,
           Datastax, Notion, and <a href="https://nextjs.org/showcase">more</a>.
         </p>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
