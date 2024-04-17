@@ -368,7 +368,7 @@ export default function Page() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="mailto:mprue@gmail.com"
+            href="mailto:maximilien49@hotmail.fr"
           >
             <ArrowIcon />
             <p className="ml-2 h-7">Mail</p>
