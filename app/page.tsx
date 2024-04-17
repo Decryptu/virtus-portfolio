@@ -10,7 +10,6 @@ import birthday from 'public/images/home/birthday.png';
 import town from 'public/images/home/town.png';
 import cryptoast from 'public/images/home/cryptoast.jpg';
 import avatar from 'app/avatar.jpg';
-import { PreloadResources } from 'app/preload';
 
 function Badge(props) {
   return (
@@ -125,7 +124,6 @@ function BlogLink({ slug, name }) {
 export default function Page() {
   return (
     <section>
-      <PreloadResources />
       <h1 className="mb-8 text-2xl font-medium tracking-tighter">
         Bonjour, je suis Maximilien 👋
       </h1>
