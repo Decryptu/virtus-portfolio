@@ -2,13 +2,13 @@ import { Suspense } from 'react';
 import { unstable_noStore as noStore } from 'next/cache';
 import Link from 'next/link';
 import Image from 'next/image';
-import smashing from 'public/images/home/smashing.jpg';
-import summit from 'public/images/home/summit.jpg';
-import reactathon from 'public/images/home/reactathon.jpg';
-import ship from 'public/images/home/ship.jpg';
-import filming from 'public/images/home/filming.jpg';
-import meetups from 'public/images/home/meetups.jpg';
-import vercel from 'public/images/home/vercel.jpg';
+import face from 'public/images/home/face.png';
+import back from 'public/images/home/back.png';
+import night from 'public/images/home/night.png';
+import gas from 'public/images/home/gas.png';
+import birthday from 'public/images/home/birthday.png';
+import town from 'public/images/home/town.png';
+import cryptoast from 'public/images/home/cryptoast.jpg';
 import avatar from 'app/avatar.jpg';
 import { PreloadResources } from 'app/preload';
 
@@ -59,9 +59,13 @@ function ChannelLink({ img, link, name }) {
               priority
             />
             <div className="relative -right-10 -top-6 inline-flex h-6 w-6 items-center rounded-full border border-neutral-200 bg-white p-1 dark:border-neutral-700">
-              <svg width="15" height="11" role="img" aria-label="YouTube logo">
-                <use href="/sprite.svg#youtube" />
-              </svg>
+              <Image
+                src="/x.svg"
+                alt="X logo"
+                width={15}
+                height={11}
+                unoptimized
+              />
             </div>
           </div>
           <div className="flex flex-col">
@@ -123,12 +127,12 @@ export default function Page() {
     <section>
       <PreloadResources />
       <h1 className="mb-8 text-2xl font-medium tracking-tighter">
-        hey, I'm Maximilien 👋
+        Bonjour, je suis Maximilien 👋
       </h1>
       <p className="prose prose-neutral dark:prose-invert">
-        {`I'm a frontend developer, optimist, and community builder. I currently `}
-        <Link href="/work">work</Link>
-        {` as the Editor in chief at `}
+        {`Je suis rédacteur et community manager freelance. Actuellement, je `}
+        <Link href="/work">travail</Link>
+        {` en tant que rédacteur en chef chez `}
         <span className="not-prose">
           <Badge href="https://cryptoast.fr/">
             <img
@@ -138,40 +142,46 @@ export default function Page() {
               height="16"
               className="inline-flex"
             />
-            <span className='ml-1'>Cryptoast</span>
+            <span className="ml-1">Cryptoast</span>
           </Badge>
         </span>
-        {`, where I help teach the `}
-        <Badge href="https://nextjs.org">
-          <img
-            alt="Next.js logomark"
-            src="/next-logo.svg"
-            className="!mr-1"
-            width="14"
-            height="14"
-          />
-          Next.js
-        </Badge>
-        {` community, an open-source web framework built with `}
-        <Badge href="https://react.dev">
-          <svg
-            width="14"
-            height="14"
-            role="img"
-            aria-label="React logo"
-            className="!mr-1"
-          >
-            <use href="/sprite.svg#react" />
-          </svg>
-          React
-        </Badge>
-        .
+        {`, où j'ai écrit plus de 1200 articles.`}
+        <br></br>
+        <br></br>
+        {`Passionné par `}
+        <span className="not-prose">
+          <Badge href="https://bitcoin.org/">
+            <img
+              src="/bitcoin.svg"
+              alt="Bitcoin logo"
+              width="16"
+              height="16"
+              className="inline-flex"
+            />
+            <span className="ml-1">Bitcoin</span>
+          </Badge>
+        </span>
+        {` et `}
+        <span className="not-prose">
+          <Badge href="https://ethereum.org/">
+            <img
+              src="/ethereum.svg"
+              alt="Ethereum logo"
+              width="16"
+              height="16"
+              className="inline-flex"
+            />
+            <span className="ml-1">Ethereum</span>
+          </Badge>
+        </span>
+        {`, je suis également écrivain et gestionnaire de communauté. Chez Cryptoast
+        , je contribue à sensibiliser et à développer notre communauté de lecteurs engagés.`}
       </p>
       <div className="my-8 columns-2 gap-4 sm:columns-3">
         <div className="relative mb-4 h-40">
           <Image
-            alt="Me speaking on stage at React Summit about the future of Next.js"
-            src={summit}
+            alt="Me"
+            src={back}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -180,8 +190,8 @@ export default function Page() {
         </div>
         <div className="relative mb-4 h-80 sm:mb-0">
           <Image
-            alt="Me, Lydia, and Delba filming the Next.js Conf keynote"
-            src={filming}
+            alt="Painting"
+            src={birthday}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -190,8 +200,8 @@ export default function Page() {
         </div>
         <div className="relative h-40 sm:mb-4 sm:h-80">
           <Image
-            alt="Me standing on stage at Reactathon delivering the keynote"
-            src={reactathon}
+            alt="Painting"
+            src={night}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -200,8 +210,8 @@ export default function Page() {
         </div>
         <div className="relative mb-4 h-40 sm:mb-0">
           <Image
-            alt="Me standing on stage at SmashingConf giving a talk about my optimism for the web"
-            src={smashing}
+            alt="Me"
+            src={face}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -210,8 +220,8 @@ export default function Page() {
         </div>
         <div className="relative mb-4 h-40">
           <Image
-            alt="Me and Guillermo Rauch on stage for Vercel Ship, answering questions from the Next.js community"
-            src={ship}
+            alt="Painting"
+            src={gas}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -220,8 +230,8 @@ export default function Page() {
         </div>
         <div className="relative h-80">
           <Image
-            alt="My badge on top of a pile of badges from a Vercel meetup we held"
-            src={meetups}
+            alt="Painting"
+            src={town}
             fill
             sizes="(min-width: 768px) 213px, 33vw"
             priority
@@ -244,7 +254,7 @@ export default function Page() {
           link="https://x.com/MaximilienP51"
         />
         <ChannelLink
-          img={vercel}
+          img={cryptoast}
           name="@CryptoastMedia"
           link="https://x.com/CryptoastMedia"
         />
