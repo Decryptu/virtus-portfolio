@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 export default function BlogPage() {
-  let allBlogs = getBlogPosts();
+  const allBlogs = getBlogPosts();
 
   return (
     <section>
@@ -34,10 +34,10 @@ export default function BlogPage() {
             <p className="text-neutral-900 dark:text-neutral-100 tracking-tight flex-grow">
               {post.metadata.title}
             </p>
-            <div className="inline-flex items-center w-fit text-xs gap-2 px-2 py-1 border rounded-md border-neutral-300 dark:border-neutral-700 text-neutral-600 dark:text-neutral-400 mt-2 sm:mt-0">
+            <div className="inline-flex items-center w-fit text-xs gap-2 px-2 ml-2 py-1 border rounded-md border-neutral-300 dark:border-neutral-700 text-neutral-600 dark:text-neutral-400 mt-2 sm:mt-0">
               <Eye size={16} /> {post.metadata.view || '1000'}
             </div>
-            <Suspense fallback={<p className="h-6" />}></Suspense>
+            <Suspense fallback={<p className="h-6" />} />
           </Link>
         ))}
     </section>

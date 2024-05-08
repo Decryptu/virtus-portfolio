@@ -15,3 +15,9 @@ This application requires Node.js v18.17+.
 bun install
 bun dev
 ```
+
+### To-do
+
+- [ ] [Trade Republic](https://cryptoast.fr/trade-republic-avis-tuto-plateforme-investir-intelligemment-nombreux-actifs/)
+
+- [ ] [Binance](https://cryptoast.fr/france-eldorado-entreprises-crypto-web3-interview-stephanie-cabossioras-binance-france/)
