@@ -5,7 +5,7 @@ export default function robots() {
         userAgent: '*',
       },
     ],
-    sitemap: 'https://virtus-portfolio.vercel.app/sitemap.xml',
-    host: 'https://virtus-portfolio.vercel.app',
+    sitemap: 'https://max-prue.vercel.app/sitemap.xml',
+    host: 'https://max-prue.vercel.app',
   };
 }

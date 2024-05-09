@@ -20,8 +20,8 @@ export async function generateMetadata({
     image,
   } = post.metadata;
   let ogImage = image
-    ? `https://virtus-portfolio.vercel.app${image}`
-    : `https://virtus-portfolio.vercel.app/og?title=${title}`;
+    ? `https://max-prue.vercel.app${image}`
+    : `https://max-prue.vercel.app/og?title=${title}`;
 
   return {
     title,
@@ -31,7 +31,7 @@ export async function generateMetadata({
       description,
       type: 'article',
       publishedTime,
-      url: `https://virtus-portfolio.vercel.app/blog/${post.slug}`,
+      url: `https://max-prue.vercel.app/blog/${post.slug}`,
       images: [
         {
           url: ogImage,
@@ -100,9 +100,9 @@ export default function Blog({ params }) {
             dateModified: post.metadata.publishedAt,
             description: post.metadata.summary,
             image: post.metadata.image
-              ? `https://virtus-portfolio.vercel.app${post.metadata.image}`
-              : `https://virtus-portfolio.vercel.app/og?title=${post.metadata.title}`,
-            url: `https://virtus-portfolio.vercel.app/blog/${post.slug}`,
+              ? `https://max-prue.vercel.app${post.metadata.image}`
+              : `https://max-prue.vercel.app/og?title=${post.metadata.title}`,
+            url: `https://max-prue.vercel.app/blog/${post.slug}`,
             author: {
               '@type': 'Person',
               name: 'Maximilien Prué',

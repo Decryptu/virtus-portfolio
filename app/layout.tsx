@@ -8,7 +8,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { SandpackCSS } from './blog/[slug]/sandpack';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://virtus-portfolio.vercel.app'),
+  metadataBase: new URL('https://max-prue.vercel.app'),
   title: {
     default: 'Maximilien Prué',
     template: '%s | Maximilien Prué',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Maximilien Prué',
     description: 'Rédacteur en chef, écrivain, et community manager.',
-    url: 'https://virtus-portfolio.vercel.app',
+    url: 'https://max-prue.vercel.app',
     siteName: 'Maximilien Prué',
     locale: 'fr_FR',
     type: 'website',
