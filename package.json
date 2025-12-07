@@ -1,6 +1,6 @@
 {
   "name": "virtus-portfolio",
-	"version": "1.0.1",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
@@ -8,32 +8,36 @@
     "start": "next start"
   },
   "dependencies": {
-    "@codesandbox/sandpack-react": "2.12.0",
-    "@googleapis/youtube": "^13.1.0",
-    "@tailwindcss/typography": "^0.5.10",
-    "@types/node": "20.11.17",
-    "@types/react": "18.2.55",
-    "@types/react-dom": "18.2.19",
-    "@vercel/analytics": "^1.2.2",
-    "@vercel/speed-insights": "^1.0.10",
-    "autoprefixer": "^10.4.17",
-    "dotenv": "^16.4.2",
-    "geist": "1.2.2",
-    "lucide-react": "^0.372.0",
-    "next": "14.2.0-canary.66",
-    "next-auth": "5.0.0-beta.3",
-    "next-mdx-remote": "^4.4.1",
-    "postcss": "^8.4.35",
-    "postgres": "^3.4.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-tweet": "3.2.0",
-    "sugar-high": "^0.6.0",
-    "tailwindcss": "^3.4.1",
-    "typescript": "5.3.3",
-    "vercel": "^34.0.0"
+    "@codesandbox/sandpack-react": "^2.20.0",
+    "@googleapis/youtube": "^29.0.0",
+    "@tailwindcss/postcss": "^4.1.17",
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vercel/analytics": "^1.6.1",
+    "@vercel/speed-insights": "^1.3.1",
+    "autoprefixer": "^10.4.22",
+    "dotenv": "^17.2.3",
+    "geist": "^1.5.1",
+    "lucide-react": "^0.556.0",
+    "next": "^16.0.7",
+    "next-auth": "^4.24.13",
+    "next-mdx-remote": "^5.0.0",
+    "postcss": "^8.5.6",
+    "postgres": "^3.4.7",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "react-tweet": "^3.2.2",
+    "sugar-high": "^0.9.5",
+    "tailwindcss": "^4.1.17",
+    "typescript": "^5.9.3",
+    "vercel": "^49.1.1"
   },
   "prettier": {
     "singleQuote": true
+  },
+  "devDependencies": {
+    "babel-plugin-react-compiler": "^1.0.0"
   }
 }
