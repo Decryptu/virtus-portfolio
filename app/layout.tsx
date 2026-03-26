@@ -13,10 +13,10 @@ export const metadata: Metadata = {
     default: 'Maximilien Prué',
     template: '%s | Maximilien Prué',
   },
-  description: 'Rédacteur en chef, écrivain, et community manager.',
+  description: 'Analyste chez OAK Research, écrivain, et community manager.',
   openGraph: {
     title: 'Maximilien Prué',
-    description: 'Rédacteur en chef, écrivain, et community manager.',
+    description: 'Analyste chez OAK Research, écrivain, et community manager.',
     url: 'https://max-prue.vercel.app',
     siteName: 'Maximilien Prué',
     locale: 'fr_FR',

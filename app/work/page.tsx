@@ -15,14 +15,26 @@ export default function WorkPage() {
       </h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          Depuis janvier 2024, je suis Rédacteur en Chef chez Cryptoast, où j'ai
-          commencé ma carrière en tant que rédacteur en décembre 2021. Découvrez
-          ici un résumé de mon travail et mes initiatives.
+          Depuis novembre 2025, je suis Analyste chez OAK Research. Auparavant,
+          j'ai été Rédacteur en Chef chez Cryptoast de janvier 2024 à novembre 2025,
+          où j'avais commencé en tant que rédacteur en décembre 2021. Découvrez
+          ici un résumé de mon parcours et mes initiatives.
+        </p>
+        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">OAK Research</h2>
+        <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+          Analyste — depuis novembre 2025
+        </p>
+        <p>
+          Je produis des analyses approfondies sur les cryptomonnaies, la finance
+          décentralisée et les innovations du secteur blockchain. Mes publications
+          couvrent des sujets tels que les stablecoins, les protocoles DeFi et
+          les tendances macroéconomiques impactant le marché crypto.
         </p>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">Cryptoast</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          Rédacteur en Chef
+          Rédacteur en Chef — janvier 2024 à novembre 2025
         </p>
         <p>
           Responsable de la stratégie éditoriale et du développement de nouveaux
@@ -37,9 +49,9 @@ export default function WorkPage() {
         </p>
         <ul>
           <li>
-            Acteur clé dans l'optimisation du SEO, j'ai écrit des articles qui
-            ont été lus par plusieurs centaines de milliers de lecteurs,
-            contribuant significativement à l'accroissement de notre visibilité
+            Acteur clé dans l'optimisation du SEO, j'ai écrit plus de 1500 articles
+            qui ont été lus par plusieurs centaines de milliers de lecteurs,
+            contribuant significativement à l'accroissement de la visibilité
             en ligne.
           </li>
           <li>
@@ -48,10 +60,8 @@ export default function WorkPage() {
             des outils SEO et de gestion des réseaux sociaux.
           </li>
         </ul>
-        <p>
-          Ces initiatives ont non seulement augmenté le trafic et l'engagement
-          sur notre plateforme mais ont également établi Cryptoast comme une
-          référence dans le suivi de l'actualité des cryptomonnaies.
+        <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+          Rédacteur — décembre 2021 à janvier 2024
         </p>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
       </div>

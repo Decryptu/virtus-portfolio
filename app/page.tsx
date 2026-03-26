@@ -128,9 +128,28 @@ export default function Page() {
         Bonjour, je suis Maximilien 👋
       </h1>
       <p className="prose prose-neutral dark:prose-invert">
-        {`Je suis rédacteur et community manager freelance. Actuellement, je `}
-        <Link href="/work">travail</Link>
-        {` en tant que rédacteur en chef chez `}
+        {`Je suis analyste et community manager freelance. Actuellement, je `}
+        <Link href="/work">travaille</Link>
+        {` en tant qu'analyste chez `}
+        <span className="not-prose">
+          <Badge href="https://oakresearch.io/">
+            <img
+              src="/oak.svg"
+              alt="OAK Research logo"
+              width="16"
+              height="16"
+              className="inline-flex"
+            />
+            <span className="ml-1">OAK Research</span>
+          </Badge>
+        </span>
+        {`. Auparavant, j'ai écrit plus de `}
+        <Link href="https://cryptoast.fr/author/maximilien/" legacyBehavior>
+          <a target="_blank" rel="noopener noreferrer">
+            1500 articles
+          </a>
+        </Link>
+        {` chez `}
         <span className="not-prose">
           <Badge href="https://cryptoast.fr/">
             <img
@@ -143,12 +162,7 @@ export default function Page() {
             <span className="ml-1">Cryptoast</span>
           </Badge>
         </span>
-        {`, où j'ai écrit plus de `}
-        <Link href="https://cryptoast.fr/author/maximilien/" legacyBehavior>
-          <a target="_blank" rel="noopener noreferrer">
-            1200 articles.
-          </a>
-        </Link>
+        {`.`}
         <br></br>
         <br></br>
         {`Passionné par `}
@@ -177,8 +191,7 @@ export default function Page() {
             <span className="ml-1">Ethereum</span>
           </Badge>
         </span>
-        {`, je suis également écrivain et community manager. Chez Cryptoast
-        , je contribue à sensibiliser et à développer notre communauté de lecteurs engagés.`}
+        {`, je suis également écrivain et community manager. Chez OAK Research, je produis des analyses approfondies sur les cryptomonnaies et la finance décentralisée.`}
       </p>
       <div className="my-8 columns-2 gap-4 sm:columns-3">
         <div className="relative mb-4 h-40">
@@ -244,12 +257,11 @@ export default function Page() {
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          J'ai pris l'initiative de plusieurs améliorations au sein de la
-          rédaction de Cryptoast, de l'optimisation du SEO, à la mise en place
-          d'un format d'article spécifique pour couvrir l'actualité en direct.
-          Ce format permet de suivre un événement sur plusieurs jours au sein
-          d'un même article, offrant ainsi à nos lecteurs une expérience
-          immersive et continue.
+          Chez OAK Research, je rédige des analyses détaillées sur les innovations
+          du secteur crypto et DeFi. Auparavant, chez Cryptoast, j'ai pris l'initiative
+          de plusieurs améliorations au sein de la rédaction, de l'optimisation du SEO
+          à la mise en place d'un format d'article spécifique pour couvrir l'actualité
+          en direct.
         </p>
       </div>
       <div className="my-8 flex w-full flex-col space-x-0 space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
@@ -266,14 +278,18 @@ export default function Page() {
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          En parallèle, j'ai contribué à dynamiser les réseaux sociaux de
-          Cryptoast, rendant l'interaction avec notre communauté plus vivante et
+          Chez Cryptoast, j'ai contribué à dynamiser les réseaux sociaux,
+          rendant l'interaction avec la communauté plus vivante et
           engageante. Grâce à l'introduction d'infographies attractives, nous
-          avons significativement augmenté l'engagement de nos abonnés, avec une
+          avons significativement augmenté l'engagement des abonnés, avec une
           moyenne de plus de 150 likes et retweets par post de ce type.
         </p>
       </div>
       <div className="my-8 flex w-full flex-col space-y-4">
+        <BlogLink
+          name="Theo thUSD : Anatomie du premier yield-bearing stablecoin adossé à l'or"
+          slug="theo-thusd"
+        />
         <BlogLink
           name="Les Argentins se tournent vers le Bitcoin pour contrer l'inflation"
           slug="argentins-bitcoin"
@@ -296,6 +312,11 @@ export default function Page() {
         </p>
       </div>
       <div className="my-8 flex h-14 w-full flex-row space-x-2 overflow-x-auto">
+        <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
+          <a href="https://oakresearch.io/">
+            <img src="/oak.svg" width="78" height="20" alt="OAK Research logo" />
+          </a>
+        </div>
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
           <a href="https://alyra.fr">
             <img src="/alyra.svg" width="78" height="20" alt="Alyra logo" />
