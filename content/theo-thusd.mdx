@@ -1,11 +1,11 @@
 ---
 title: 'Theo thUSD : Anatomie du premier yield-bearing stablecoin adossé à l'or'
-publishedAt: '2025-03-19'
-summary: 'Analyse approfondie du protocole Theo et de son stablecoin thUSD, le premier yield-bearing stablecoin adossé à l'or, publié sur OAK Research.'
+publishedAt: '2026-03-10'
+summary: 'Les yield-bearing stablecoins ont profondément transformé la finance on-chain, mais le trilemme entre rendement, scalabilité et faible volatilité reste sans réponse convaincante. Theo ambitionne de le résoudre en s'appuyant sur l'actif le plus éprouvé au monde : l'or.'
 image: '/images/theo-thusd/miniature.webp'
 ---
 
-Theo est un protocole DeFi qui introduit le thUSD, le premier stablecoin productif de rendement (yield-bearing) adossé à l'or. Ce concept novateur fusionne la stabilité historique de l'or avec les opportunités de rendement offertes par la finance décentralisée.
+Les yield-bearing stablecoins ont profondément transformé la finance on-chain, mais le trilemme entre rendement, scalabilité et faible volatilité reste sans réponse convaincante. Theo ambitionne de le résoudre en s'appuyant sur l'actif le plus éprouvé au monde : l'or. Dans ce rapport, on décortique les mécaniques de thGOLD et thUSD, et on vous donne notre avis.
 
 <Image
   alt={`Miniature de l'article Theo thUSD`}
@@ -14,49 +14,131 @@ Theo est un protocole DeFi qui introduit le thUSD, le premier stablecoin product
   height={800}
 />
 
-## Qu'est-ce que le thUSD ?
+## Introduction
 
-Le thUSD est un stablecoin dont la valeur est adossée à l'or, tout en générant un rendement pour ses détenteurs. Contrairement aux stablecoins traditionnels indexés sur le dollar américain (comme l'USDT ou l'USDC), **le thUSD tire sa stabilité de la valeur de l'or tokenisé**, offrant ainsi une alternative décorrélée du système monétaire fiduciaire.
+Popularisés par le modèle d'Ethena et son USDe, les yield-bearing stablecoins ont profondément transformé la structure de la finance on-chain. Du mois de janvier 2025 à aujourd'hui, leur supply est passée de 3,77 milliards à 14 milliards, ce qui traduit une croissance de l'ordre de 271 %.
 
-L'idée fondamentale est simple : combiner la réserve de valeur millénaire qu'est l'or avec les mécanismes de rendement propres à la DeFi, créant un actif à la fois stable et productif.
+Ce nouveau modèle a ouvert la voie à des primitives jusqu'alors inenvisageables, par exemple en introduisant des tranches de yield comme peut le faire Strata, en incorporant le yield natif de cette classe d'actifs dans des stratégies sophistiquées via les PT de Pendle sur Aave ou Morpho, ou encore en proposant une logique de collatéral productif comme peut le faire HyENA grâce à l'USDe.
 
-## L'architecture du protocole Theo
+Pour autant, ce modèle a des limites. Pour les yield-bearing stablecoins collatéralisés par des RWA institutionnels comme les bons du Trésor américains, les rendements proposés sont parmi les plus robustes, mais ils manquent d'attractivités. À l'inverse, pour les modèles hybrides ou tirés de stratégies crypto-natives, les rendements sont soumis à une certaine volatilité, ce qui constitue clairement une barrière pour les institutionnels qui ont besoin de prévisibilité sur leurs revenus.
 
-Le protocole Theo repose sur une architecture qui permet de collatéraliser de l'or tokenisé pour émettre du thUSD. Les utilisateurs peuvent déposer des tokens d'or (comme le PAXG ou le XAUT) en collatéral, et le protocole émet en retour du thUSD.
+L'USDe d'Ethena en est une bonne illustration. Basé sur une stratégie delta-neutral capturant les funding rates, son rendement dépend étroitement des conditions de marché. Lorsque l'activité se contracte et que les funding rates se normalisent, le yield s'érode mécaniquement. **Autrement dit, la promesse de rendement reste conditionnelle à un environnement favorable, ce qui limite la visibilité à long terme.**
+
+En clair, le marché se retrouve confronté à ce qui a été identifié comme le trilemme des stablecoins : comment concilier yield, scalabilité et faible volatilité ?
 
 <Image
-  alt={`Benchmark des performances du thUSD face au BTC et à l'ETH`}
+  alt={`Benchmark des yield-bearing stablecoins`}
   src={`/images/theo-thusd/en_benchmark_yield_bearing.webp`}
-  width={1600}
-  height={800}
+  width={1200}
+  height={630}
 />
 
-**Le mécanisme de rendement** provient de stratégies DeFi diversifiées déployées sur le collatéral sous-jacent. Le protocole utilise l'or déposé pour générer des rendements via différentes stratégies, dont une partie est redistribuée aux détenteurs de thUSD.
+Theo, un projet DeFi qui s'est fait un nom en introduisant le thBILL, une représentation tokenisée d'un panier de bons du Trésor américain déployé sur Ethereum et HyperEVM, ambitionne de résoudre cette problématique grâce à l'or.
 
-## Stratégie de rendement : BTC, ETH et au-delà
+La thèse de Theo est la suivante : bien que l'accès à l'or se soit démocratisé au fil du temps, s'y exposer reste coûteux. L'or physique implique des frais de stockage, d'assurance et de transport, tandis que les produits financiers comme les ETF intègrent des frais de gestion et introduisent un certain degré de friction.
 
-Ce qui distingue Theo des autres protocoles de stablecoins est sa stratégie de rendement multi-actifs. Le protocole ne se contente pas de détenir passivement l'or en collatéral : il déploie des stratégies actives intégrant le BTC et l'ETH pour maximiser les rendements.
+Certes, sous sa forme tokenisée, l'or devient bien plus liquide et accessible. Le XAUT de Tether et le PAXG de Paxos ont d'ailleurs prouvé que le métal jaune avait une place on-chain, les 2 actifs cumulant aujourd'hui près de 5,4 Md$ de capitalisation, avec une croissance de l'ordre de 177 % sur l'année 2025. **Mais ces derniers ne sont qu'une représentation 1:1 de l'or, ils ne produisent pas de rendements et leur intérêt est donc mécaniquement limité, tout comme leur composabilité.**
+
+Theo vient justement unifier le meilleur des deux mondes, en introduisant le premier yield-bearing stablecoin reposant sur l'or.
+
+---
+
+## La proposition de Theo Network
+
+Theo reprend en partie la logique popularisée par Ethena avec l'USDe et sa version stakée génératrice de rendement, le sUSDe, mais l'applique à un nouvel actif sous-jacent : l'or. L'architecture du protocole repose ainsi sur deux briques complémentaires, le thGOLD et le thUSD, qui permettent de transformer un actif historiquement inerte en source de rendement on-chain.
+
+### Qu'est-ce que le thGOLD ?
+
+Le thGOLD bascule totalement la perception historique de l'or, considéré certes comme une réserve de valeur, mais qui conserve inexorablement une image d'actif "inerte", en cela qu'il ne produit aucun rendement en dehors de son prix en tant que tel.
+
+Pour bien saisir comment Theo fait de l'or un actif à rendements, un peu de contexte : les détaillants en or ont un besoin opérationnel constant en matière première pour alimenter leurs stocks. Plutôt que d'immobiliser des capitaux importants pour acheter cet or, ils l'empruntent auprès de fonds spécialisés, s'acquittant d'un intérêt en contrepartie, puis le restituent une fois leurs besoins couverts.
+
+**Le thGOLD est tout simplement la tokenisation de ce mécanisme de crédit privé.** En pratique, le thGOLD représente une part du MG999 On-Chain Gold Fund, un fonds sécurisé géré par FundBridge Capital et soutenu par Libeara, une plateforme de tokenisation filiale de Standard Chartered. Ce fonds prête de l'or à des acteurs établis du secteur, comme Mustafa Gold, l'un des plus grands et des plus anciens détaillants d'or de Singapour.
+
+Ainsi, les intérêts générés sont redistribués aux détenteurs de thGOLD, transformant ainsi l'exposition à l'or en un actif productif délivrant un rendement d'environ 2 % par an. Les investisseurs bénéficient par ailleurs d'une protection via une garantie sur les stocks d'or des emprunteurs et un buffer first-loss de 20 % porté par le sponsor du fonds.
+
+Cette première brique introduit donc un yield natif directement adossé à l'or. En plus d'offrir une exposition au prix spot du métal, le thGOLD bénéficie de la composabilité propre aux actifs on-chain. Il peut ainsi être utilisé dans des stratégies DeFi plus complexes, notamment des stratégies delta-neutral ou des boucles de prêts et d'emprunts.
+
+Dans les faits, cette mécanique présente un double intérêt :
+
+- **Pour les investisseurs**, le thGOLD permet de s'exposer facilement au cours de l'or spot avec en plus les bénéfices d'un yield natif et de la composabilité de la DeFi.
+- **Pour les institutionnels**, c'est une manière de décomplexifier en profondeur le circuit traditionnel d'accès à l'or. Le thGOLD, en plus de délivrer un yield extrêmement peu volatile, supprime les coûts inhérents à la custody ou aux frais habituels des ETF tout en supprimant les différents points de friction grâce à la blockchain.
+
+En bref, le thGOLD est un yield-bearing asset délivrant un yield quasi-fixe d'environ 2 % en plus de proposer une exposition à l'or spot. Parallèlement, sa nature on-chain en fait un actif à forte composabilité, pouvant être mis à profit dans des stratégies inaccessibles pour les actifs proposant une exposition au cours de l'or sans proposer de yield natif.
+
+Ainsi, le thGOLD est aujourd'hui le seul actif à transformer l'or en un actif à rendements sur la blockchain, et le succès de l'or (+ 60% sur 2025, +20 % YTD) traduit un intérêt clair de la part des investisseurs pour cet actif historique. **En cela, le thGOLD nous semble clairement proposer un modèle à fort potentiel.**
+
+### Fonctionnement du thUSD
+
+Le thUSD est, en pratique, le stablecoin visant à résoudre le trilemme que nous évoquions, à savoir l'équation entre scalabilité, sécurité et performance. Actuellement, les yield-bearing stablecoins s'articulent globalement autour de 2 stratégies pour générer du rendement : les T-bills, ou des stratégies complexes on-chain comme le delta-neutral.
+
+Le thUSD propose une troisième voie. Concrètement, lorsqu'un utilisateur mint du thUSD, Theo ouvre une position long sur le thGOLD et ouvre en parallèle une position short sur les contrats futures de l'or, notamment sur le CME. **Cette stratégie delta-neutral reposant entièrement sur l'or permet à Theo de se hedge efficacement et de maintenir le cours du thUSD.**
+
+Et là où l'ensemble propose un produit différenciant, c'est sur le yield. En plus du yield natif du thGOLD, le thUSD vient capter des rendements sur les marchés de matières premières via son exposition aux contrats futures.
+
+En effet, sur le marché de l'or, les contrats à terme se négocient généralement avec une prime par rapport au prix immédiat, c'est ce que l'on appelle le Contango. Ce dernier reflète notamment les coûts de stockage et d'assurance du métal physique.
+
+Ainsi, en maintenant et en renouvelant ses positions vendeuses sur ces contrats, Theo capture mécaniquement cette prime au fil du temps ; c'est ce que l'on appelle le Roll Yield. **In fine, cette stratégie permet au thUSD de délivrer un rendement déconnecté de la volatilité crypto.**
+
+En plus de ces 2 sources de rendement, le thUSD est également collatéralisé par différentes sources de revenus liquides et peu volatiles, notamment avec du thBILL, et avec des stratégies plus complexes comme du delta-neutral sur le BTC. Ainsi, l'or reste le moteur de rendements du thUSD, mais ces flux de liquidités parallèles permettent d'assurer un tampon de liquidité.
 
 <Image
   alt={`Stratégie thUSD avec BTC et ETH`}
   src={`/images/theo-thusd/thusd_btc_eth_strategy.webp`}
-  width={1600}
-  height={800}
+  width={1200}
+  height={630}
 />
 
-Cette approche permet au thUSD d'offrir des rendements compétitifs tout en maintenant la stabilité de l'or comme ancrage de valeur, **une proposition unique dans l'écosystème DeFi actuel**.
+Selon des backtests menés en interne, sur l'année 2025, cette combinaison a permis à Theo d'atteindre un rendement moyen de 8,27 %, avec un floor à 4 % même durant les mois les plus calmes. À titre de comparaison, les stratégies delta-neutral sur le BTC et l'ETH ont généré respectivement 4,6 et 4,4 % sur la même période.
 
-## Pourquoi un stablecoin adossé à l'or ?
+Encore une fois, ces rendements sont tirés de tests menés en interne, et il conviendra d'évaluer le yield réel une fois le produit lancé.
 
-Dans un contexte où les stablecoins indexés sur le dollar font face à des risques réglementaires croissants et où la confiance dans les monnaies fiduciaires est questionnée, **un stablecoin adossé à l'or présente plusieurs avantages** :
+Il est essentiel de comprendre que contrairement à la plupart des yield-bearing stablecoins proposés aujourd'hui, **le mécanisme de rendements du thUSD n'est pas soumis au facteur de la scalabilité**. Si l'on reprend notre exemple de l'USDe d'Ethena, son yield est mécaniquement compressé par l'évolution de la supply en circulation.
 
-- **Décorrélation du dollar** : l'or offre une couverture naturelle contre la dévaluation des monnaies fiduciaires
-- **Réserve de valeur historique** : l'or est reconnu comme réserve de valeur depuis des millénaires
-- **Rendement actif** : contrairement à la détention passive d'or, le thUSD génère un rendement pour ses détenteurs
-- **Transparence DeFi** : le collatéral est vérifiable on-chain en temps réel
+Ce facteur limitant ne se transpose pas sur le modèle du thUSD, et ce pour une raison simple : le marché de l'or bénéficie d'une profondeur de marché incomparable, avec un Open Interest 39 fois supérieur à celui du Bitcoin.
+
+De surcroît, sa volatilité est bien plus limitée, avec 14,4 % de volatilité annuelle contre 33,5 % pour le BTC, ce qui permet de lisser son yield et d'offrir une meilleure prévisibilité.
+
+En clair, le thUSD bénéficie théoriquement d'un plafond de capacité sans commune mesure avec ce qui existe sur le marché crypto, ce qui lui permet de proposer un yield très attractif sans avoir à s'inquiéter du facteur d'adoption.
+
+---
 
 ## Conclusion
 
-Le thUSD de Theo représente une innovation significative dans l'écosystème des stablecoins. En combinant la stabilité de l'or avec des stratégies de rendement DeFi, le protocole ouvre une nouvelle catégorie d'actifs : **les yield-bearing stablecoins adossés à des actifs réels**.
+En clair, Theo s'approprie une mécanique déjà validée par Ethena, la stratégie delta-neutral génératrice de yield, et la transpose sur un sous-jacent radicalement différent : l'or. C'est une distinction qui peut sembler anodine, mais qui change fondamentalement l'équation de scalabilité.
+
+Effectivement, le marché dérivé de l'or opère sur une profondeur sans commune mesure avec le BTC ou l'ETH, et sa volatilité structurellement plus basse offre au thUSD un profil de rendement que les modèles crypto-natifs ne peuvent tout simplement pas répliquer à grande échelle.
+
+**C'est précisément là que réside la thèse du thUSD et du thGOLD : non pas dans la performance brute, mais dans la capacité à maintenir cette performance à mesure que le protocole grandit.** Si ce pari s'avère juste, le thUSD pourrait s'imposer comme la réponse la plus crédible au trilemme des stablecoins, et le thGOLD comme une primitive DeFi à part entière.
+
+Sur le papier, les backtests sont convaincants, l'infrastructure du thBILL prouve que l'équipe sait scaler, et les partenaires institutionnels sont sérieux. Mais tout cela n'est que théorique : le thUSD n'a pas encore été confronté à un marché de l'or en stress prolongé, ni à la réalité d'une adoption à grande échelle. Ce sont ces prochains mois qui diront si cette architecture tient ou non.
+
+Pour le moment, le thGOLD n'est accessible que sur Whitelist pour une sélection de partenaires institutionnels, ce que Theo a appelé la "Phase 1". La phase suivante consistera à étendre l'actif sur de nouveaux protocoles et réseaux, tandis que la Phase 3 traduira le déploiement complet et pour tous.
+
+Pour le thUSD, il est prévu qu'un pré-deposit soit lancé à hauteur de 100 M$ dans un Genesis Vault, qui précèdera le lancement officiel de l'actif.
+
+## Nos questions à l'équipe de Theo
+
+*Pour mieux comprendre le fonctionnement du thUSD et du thGOLD, nous avons posé quelques questions à l'équipe de Theo, notamment concernant un éventuel futur token.*
+
+> Pouvez-vous nous expliquer précisément quelles plateformes vous utilisez pour exécuter le basis trade du thUSD, et quels sont les facteurs clés derrière ce choix ? Et comment évaluez-vous la scalabilité de ce mécanisme, sachant qu'il offre sur le papier un yield particulièrement compétitif ?
+
+Pour le basis trade, nous opérons sur plusieurs venues. La jambe short est exécutée sur le CME pour l'exposition aux futures institutionnels, ainsi que sur Binance et Hyperliquid pour la partie on-chain. Cette diversification des venues est intentionnelle : elle nous offre de la flexibilité d'exécution et réduit le risque de point de défaillance unique côté hedging.
+
+Sur la scalabilité, la statistique que vous citez est le bon cadre d'analyse : l'open interest sur les futures or est 39x celui du Bitcoin. Mais le point le plus important est structurel. Le problème de compression du yield d'USDe est réel et bien documenté. À mesure que la supply scale, davantage de shorts sont nécessaires, ce qui pèse sur les funding rates et comprime le yield. Cette boucle de rétroaction n'existe pas pour le thUSD, car le contango sur les marchés de l'or reflète des coûts physiques de portage (stockage, assurance, transport) et non un positionnement spéculatif. Ces coûts ne disparaissent pas quand le sentiment de marché change, ce qui rend le profil de yield totalement différent à grande échelle.
+
+> Comment comptez-vous faire du thUSD un stablecoin avec une réelle utilité dans l'écosystème de la finance on-chain ? Plus précisément, pouvez-vous nous présenter les intégrations que vous envisagez, comme la transférabilité cross-chain ou la composabilité DeFi ?
+
+L'objectif est que le thUSD fonctionne comme du collateral productif dans la finance on-chain, et pas seulement comme un instrument de yield qu'on détient passivement, même si c'est un cas d'usage valide. Nos priorités à court terme incluent les intégrations avec des marchés de lending et avec Pendle, ce qui permettrait aux utilisateurs d'accéder à des tranches de yield et de créer une exposition à taux fixe - quelque chose que les acteurs institutionnels demandent particulièrement. La transférabilité cross-chain et la composabilité on-chain plus large sont des priorités des phases 2 et 3, à mesure que l'actif arrive à maturité.
+
+> Votre premier produit, le thBILL, a été déployé sur Ethereum mais aussi sur Hyperliquid. Prévoyez-vous d'y déployer également le thUSD et le thGOLD ? Si oui, quelle place centrale voyez-vous pour ce réseau dans la croissance de ces actifs ?
+
+Nous avons déployé le thBILL sur HyperEVM tôt parce que nous y voyions une réelle intersection entre acteurs institutionnels et retail. Nous y déploierons le thUSD et le thGOLD à terme, mais nous voulons d'abord nous assurer d'une liquidité suffisante.
+
+> Si on regarde le modèle d'Ethena, le fee switch est une question épineuse, puisque la majorité des revenus est redirigée vers le yield du sUSDe. Sur le long terme, si vous lanciez un token, vous seriez probablement confrontés au même problème. Comment réfléchissez-vous à l'accrual de valeur vers votre token sans tomber dans cette même situation ?
+
+C'est la bonne question, et nous y réfléchissons sérieusement. La tension autour du fee switch qu'Ethena rencontre est réelle : si la majorité des revenus alimente le yield du sUSDe, il reste peu de marge pour accumuler de la valeur vers un token sans dégrader le produit. Nous ne pensons pas que les modèles actuels du marché aient résolu cela proprement, et nous n'allons pas précipiter une réponse juste pour en avoir une. Ce que nous pouvons dire, c'est que lorsque nous irons dans cette direction, la structure devra avoir du sens à la fois pour les yield holders et pour les token holders simultanément, sans sacrifier l'un au détriment de l'autre.
+
+---
 
 Cet article a été initialement publié sur [OAK Research](https://oakresearch.io/fr/analyses/innovations/theo-thusd-anatomie-premier-yield-bearing-stablecoin-adosse-or).
