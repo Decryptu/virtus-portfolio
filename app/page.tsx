@@ -142,11 +142,9 @@ export default function Page() {
           </Badge>
         </span>
         {`. Auparavant, j'ai écrit plus de `}
-        <Link href="https://cryptoast.fr/author/maximilien/" legacyBehavior>
-          <a target="_blank" rel="noopener noreferrer">
+        <a href="https://cryptoast.fr/author/maximilien/" target="_blank" rel="noopener noreferrer">
             1500 articles
-          </a>
-        </Link>
+        </a>
         {` chez `}
         <span className="not-prose">
           <Badge href="https://cryptoast.fr/">
