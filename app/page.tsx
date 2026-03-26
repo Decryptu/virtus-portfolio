@@ -1,5 +1,4 @@
 import { Suspense } from 'react';
-import { unstable_noStore as noStore } from 'next/cache';
 import Link from 'next/link';
 import Image from 'next/image';
 import face from 'public/images/home/face.png';
@@ -84,8 +83,7 @@ function ChannelLink({ img, link, name }) {
   );
 }
 
-async function Subs({ name }: { name: string }) {
-  noStore();
+function Subs({ name }: { name: string }) {
   let subscribers;
   if (name === '@MaximilienP51') {
     subscribers = '250';
@@ -313,8 +311,8 @@ export default function Page() {
       </div>
       <div className="my-8 flex h-14 w-full flex-row space-x-2 overflow-x-auto">
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-          <a href="https://oakresearch.io/">
-            <img src="/oak.svg" width="78" height="20" alt="OAK Research logo" />
+          <a href="https://ethena.fi/">
+            <img src="/ethena.svg" width="78" height="20" alt="Ethena logo" />
           </a>
         </div>
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
