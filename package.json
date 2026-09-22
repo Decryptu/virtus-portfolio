@@ -21,10 +21,10 @@
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "autoprefixer": "^10.6.1",
-    "dotenv": "^18.0.2",
+    "dotenv": "^18.0.3",
     "geist": "^1.7.2",
     "lucide-react": "^1.47.0",
-    "next": "^16.3.5",
+    "next": "^16.3.6",
     "next-auth": "^4.24.15",
     "next-mdx-remote": "^6.0.0",
     "postcss": "^8.5.28",
@@ -35,7 +35,7 @@
     "sugar-high": "^2.4.1",
     "tailwindcss": "^4.3.3",
     "typescript": "^7.0.2",
-    "vercel": "^59.25.0"
+    "vercel": "^59.25.4"
   },
   "prettier": {
     "singleQuote": true
